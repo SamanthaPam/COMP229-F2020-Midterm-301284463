@@ -1,3 +1,10 @@
+<!--
+File Name: index.ejs
+Student's Name: Samantha Ortiz de Foronda Rojas
+StudentID: 301284463
+Date: 03/05/2023
+-->
+
 <% include ../partials/header.ejs %>
 
     <!-- MAIN CONTENT -->
@@ -6,9 +13,9 @@
         <div class="col-md-offset-1 col-md-10">
           <h3>Favourite Books List </h3>
           <!-- ------------------------ -->
-          <!-- FIX THE ADD BUTTON BELOW -->
-          <!-- ------------------------ -->
+          <!-- ADD BUTTON SECTION -->
           <a href="/books/add" class="btn btn-primary"><i class="fa fa-plus"></i> Add a book</a>
+          <!-- ------------------------ -->
           <br>
           <div class="table-responsive">
             <table class="table table-bordered table-striped table-hover">
@@ -33,14 +40,14 @@
 
                   <td class="text-center">
                     <!-- ------------------------ -->
-                    <!-- ADD the EDIT BUTTON HERE -->
+                    <!-- EDIT BUTTON SECTION -->
                     <a href="/books/edit/<%=books[count]._id%>" class="btn btn-primary" ><i class="fas fa-pencil-alt"></i>Edit</a>
                     <!-- ------------------------ -->
                   </td>
 
                   <td class="text-center">
                     <!-- ------------------------ -->
-                    <!-- ADD the DELETE BUTTON HERE -->
+                    <!-- DELETE BUTTON SECTION -->
                     <a href="/books/delete/<%=books[count]._id%>" class="btn btn-danger" ><i class="fas fa-trash-alt"></i>Delete</a>
                     <!-- ------------------------ -->
                   </td>
